@@ -1,0 +1,14 @@
+GET http://localhost:5000/mine
+
+POST http://localhost:5000/transactions/new 
+Content-Type: application/json
+
+{
+    "sender": "21fb7f9fa3cd4f03ab7e32127f536257",
+    "recipient": "recipient_address",
+    "amount": 5
+}
+
+
+http://localhost:5000/chain
+

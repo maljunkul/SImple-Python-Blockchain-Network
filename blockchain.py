@@ -87,7 +87,7 @@ class Blockchain(object):
 
 
 
-    def hash(block):
+    def hash(self, block):
         # Hashes a Block
         """
         Creates a SHA-256 hash of a Block
@@ -117,7 +117,7 @@ class Blockchain(object):
         :return: <int> The index of the Block that will hold this transaction
         """
           
-        self.current_transaction.append({
+        self.current_transactions.append({
             'sender':sender,
             'recipient':recipient,
             'amount':amount,
